@@ -33,3 +33,14 @@ While in the bin directory, you need to make the script executable. To do so, us
 RUN:
 ---
 Now you can use the diamond script within any given directory to create your skeleton of a new project. To do this, just call on the diamond script like this. <code>~/bin/diamond</code>
+
+
+Push Files to Git
+---
+#####This will only work if you've already copied a repo from GitHub!
+After you've run the diamond script, you can run another script from the same directory to push your new files to GitHub.
+
+<code>~/bin/diamondgit</code>
+
+It inputs a generic commit message already for you.
+

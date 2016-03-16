@@ -1,0 +1,18 @@
+#!/bin/sh
+echo "Adding files to git..."
+
+git add js/;
+git add css/;
+git add scss/;
+git add js/app.js;
+git add index.html;
+git add scss/index.scss;
+
+echo "Files/Folders are staged for Git."
+
+echo "Writing commit for Git...
+git commit -m "Add Diamond setup files";
+echo "Files committed."
+
+echo "Begin Git push..."
+git push;
