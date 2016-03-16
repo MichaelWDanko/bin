@@ -1,0 +1,19 @@
+#!/bin/sh
+echo “Adding folders...”
+
+mkdir js;
+mkdir css;
+mkdir scss;
+echo "Folders complete."
+
+echo "Adding files..."
+printf "<!DOCTYPE>\n<html>\n<head>\n<script></script>\n</head>\n\n<body></body>\n</html>" > index.html;
+printf "/*Begin coding*/\n" > js/app.js;
+printf "@import bourbon;\n@import neat;" > scss/index.scss;
+echo "Files complete."
+
+echo "Installing bourbon/neat..."
+bourbon install;
+neat install;
+
+echo "Diamond 100% complete."
