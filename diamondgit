@@ -10,7 +10,7 @@ git add scss/index.scss;
 
 echo "Files/Folders are staged for Git."
 
-echo "Writing commit for Git...
+echo "Writing commit for Git..."
 git commit -m "Add Diamond setup files";
 echo "Files committed."
 
