@@ -9,11 +9,13 @@ echo "Folders complete."
 echo "Adding files..."
 printf "<!DOCTYPE>\n<html>\n<head>\n<script></script>\n</head>\n\n<body></body>\n</html>" > index.html;
 printf "/*Begin coding*/\n" > js/app.js;
-printf "@import bourbon;\n@import neat;" > scss/index.scss;
+printf "@import \"bourbon/bourbon\";\n@import \"neat/neat\";" > scss/index.scss;
 echo "Files complete."
 
 echo "Installing bourbon/neat..."
+cd scss;
 bourbon install;
 neat install;
+cd ..
 
 echo "Diamond 100% complete."
