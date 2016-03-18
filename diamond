@@ -8,7 +8,7 @@ echo "Folders complete."
 
 echo "Adding files..."
 printf "<!DOCTYPE>\n<html>\n<head>\n<script></script>\n</head>\n\n<body></body>\n</html>" > index.html;
-printf "/*Begin coding*/\n" > js/app.js;
+printf "/* jslint browser: true */" > js/app.js;
 printf "@import \"bourbon/bourbon\";\n@import \"neat/neat\";" > scss/index.scss;
 echo "Files complete."
 
