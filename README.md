@@ -13,6 +13,7 @@ ABOUT:
 -  "index.scss" with the text "@import bourbon; @import neat;" already written.
 -  "app.js" 
 
+#####It will install the basic Gulp to your project directory. This does not include any plugins.
 
 INSTALL:
 ---
@@ -44,3 +45,6 @@ After you've run the diamond script, you can run another script from the same di
 
 It inputs a generic commit message already for you.
 
+Gulp
+---
+It installs the 

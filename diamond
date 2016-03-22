@@ -7,7 +7,7 @@ mkdir scss;
 echo "Folders complete."
 
 echo "Adding files..."
-printf "<!DOCTYPE>\n<html>\n<head>\n<script></script>\n</head>\n\n<body></body>\n</html>" > index.html;
+printf "<!DOCTYPE html>\n<html>\n<head>\n<script></script>\n</head>\n\n<body></body>\n</html>" > index.html;
 printf "/* jslint browser: true */" > js/app.js;
 printf "@import \"bourbon/bourbon\";\n@import \"neat/neat\";" > scss/index.scss;
 echo "Files complete."
