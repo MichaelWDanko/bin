@@ -44,7 +44,3 @@ After you've run the diamond script, you can run another script from the same di
 <code>~/bin/diamondgit</code>
 
 It inputs a generic commit message already for you.
-
-Gulp
----
-It installs the 
