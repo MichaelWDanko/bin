@@ -2,7 +2,6 @@
 echo “Adding folders...”
 
 mkdir js;
-mkdir css;
 mkdir scss;
 echo "Folders complete."
 
@@ -24,5 +23,9 @@ cd ..
 echo "Installing Gulp w/ npm..."
 npm install gulp
 echo "Gulp Installed."
+
+echo "Intstalling Gulp-Browserify..."
+npm install gulp-browserify
+echo "Gulp-browserify installed."
 
 echo "Diamond 100% complete."
