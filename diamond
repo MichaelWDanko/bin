@@ -12,6 +12,10 @@ printf "/* jslint browser: true */" > js/app.js;
 printf "@import \"bourbon/bourbon\";\n@import \"neat/neat\";" > scss/index.scss;
 echo "Files complete."
 
+printf "var gulp = require('gulp');"
+
+#Install different project specific programs below.
+
 echo "Installing bourbon/neat..."
 cd scss;
 bourbon install;
