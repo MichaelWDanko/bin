@@ -3,6 +3,7 @@ echo “Adding folders...”
 
 mkdir js;
 mkdir scss;
+mkdir images;
 echo "Folders complete."
 
 echo "Adding files..."
