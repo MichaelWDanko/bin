@@ -6,14 +6,27 @@ mkdir scss;
 echo "Folders complete."
 
 echo "Adding files..."
-printf "<!DOCTYPE html>\n<html>\n<head>\n<script></script>\n</head>\n\n<body></body>\n</html>" > index.html;
-printf "/* jslint browser: true */" > js/app.js;
+printf "<!DOCTYPE html>
+<html>
+<head>
+<script type=\"text/javascript\" src=\"./js/app.js\"></script>
+<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/index.css\">
+<title> </title>
+</head>\n\n
+<body>
+
+</body>
+</html>" > index.html;
+
+printf "/* jslint browser: true */
+window.addEventListener('load', function () {
+
+});" > js/app.js;
+
 printf "@import \"bourbon/bourbon\";\n@import \"neat/neat\";" > scss/index.scss;
 echo "Files complete."
 
-printf "var gulp = require('gulp');"
-
-#Install different project specific programs below.
+echo Installing different project specific packages below.
 
 echo "Installing bourbon/neat..."
 cd scss;
@@ -21,11 +34,20 @@ bourbon install;
 neat install;
 cd ..
 echo "Installing Gulp w/ npm..."
-npm install --save-dev gulp
+npm install --save gulp
 echo "Gulp Installed."
 
-echo "Intstalling Gulp-Browserify..."
-npm install gulp-browserify
+echo "Installing Gulp-Browserify..."
+npm install --save gulp-browserify
 echo "Gulp-browserify installed."
 
-echo "Diamond 100% complete."
+echo "Installing Gulp-SASS..."
+npm install --save gulp-sass
+echo "Gulp-SASS installed."
+
+echo "Creating a '.gitignore' file"
+printf "node_modules/
+public/" > .gitignore
+
+echo "Diamond 100% complete.";
+echo "Run 'diamondgulp' to set up a gulpfile.js"
